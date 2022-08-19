@@ -12,12 +12,7 @@
   }
   
   body{
-    width: 100%;
-    max-width: 1400px;
-    display: block;
-    margin: auto;
-    min-height: 100vh;
-    background: var(--fourth-color);
+   
     font-family: sans-serif;
   }
   
