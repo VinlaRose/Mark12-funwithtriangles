@@ -5,33 +5,127 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triangle Quiz</title>
+    <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
+  <nav class="navbar">
+		<ul class="link-group">
+			<li class="link"><a href="triangle.html">Triangle?</a></li>
+			<li class="link"><a href="area.html">area</a></li>
+			<li class="link"><a href="hypotenuse.html">Hypotenuse</a></li>
+			<li class="link active"><a href="quiz.html">Quiz</a></li>
+		</ul>
+	</nav>
   <form class="form-result">
     <div>
-        <p>How many vertices does a triangle have?</p>
+        <p>Qustion: How many vertices does a triangle have?</p>
         <label><input type="radio" name = "answer1" value = "3" ></input>3</label>
         <label><input type="radio" name = "answer1" value = "4" ></input>4</label>
         <label><input type="radio" name = "answer1" value = "5" ></input>5</label>
         <label><input type="radio" name = "answer1" value = "6" ></input>6</label>
         
     </div>
+    <br>
     <div>
-        <p>In triangle ABC, if AB=BC and ∠B = 70°, ∠A will be:</p>
-        <label><input type="radio" name = "answer2" value =  "70°" ></input> 70°</label>
+        <p>Qustion: In triangle ABC, if AB=BC and ∠B = 70°, ∠A will be:</p>
+        <label><input type="radio" name = "answer2" value =  "70°" ></input>70°</label>
         <label><input type="radio" name = "answer2" value =  "110°"></input>110°</label>
         <label><input type="radio" name = "answer2" value =  "55°"></input>55°</label>
         <label><input type="radio" name = "answer2" value = "130°" ></input>130°</label>
         
     </div>
-    <!-- <div>
-        <p></p>
-        <label><input type="radio" name = answer value =  ></input></label>
-        <label><input type="radio" name = answer value =  ></input></label>
-        <label><input type="radio" name = answer value =  ></input></label>
-        <label><input type="radio" name = answer value =  ></input></label>
+    <br>
+    <div>
+        <p>Question: Choose the correct statement</p>
+        <label><input type="radio" name = "answer3" value = "a triangle has two right angles" ></input>a triangle has two right angles</label>
+        <br>
+        <label><input type="radio" name = "answer3" value = "all the angles of a triangle are more than 60°" ></input>all the angles of a triangle are more than 60°</label>
+        <br>
+        <label><input type="radio" name = "answer3" value =  "an exterior angle of a triangle is always greater than the opposite interior angles"></input>an exterior angle of a triangle is always greater than the opposite interior angles</label>
+        <br>
+        <label><input type="radio" name = "answer3" value =  "all the angles of a triangle are less than 60°"></input>all the angles of a triangle are less than 60°</label>
         
-    </div> -->
+    </div>
+    <br>
+    <div>
+      <p>Question:  In two triangles, ABC and PQR, ∠A = 30°, ∠B = 70°, ∠P = 70°, ∠Q = 80° and AB = RP, then</p>
+      <label><input type="radio" name = "answer4" value = "ΔABC ≌ ΔPQR"  ></input>ΔABC ≌ ΔPQR</label>
+      <br>
+      <label><input type="radio" name = "answer4" value = "ΔABC ≌ ΔQRP"  ></input>ΔABC ≌ ΔQRP</label>
+      <br>
+      <label><input type="radio" name = "answer4" value = "ΔABC ≌ ΔRPQ "  ></input>ΔABC ≌ ΔRPQ </label>
+      <br>
+      <label><input type="radio" name = "answer4" value = "ΔABC ≌ ΔRQP"  ></input>ΔABC ≌ ΔRQP</label>
+      
+  </div>
+  <br>
+  <div>
+    <p>Question: In two triangles ABC and DEF, AB = DE, BC = DF and AC = EF, then</p>
+    <label><input type="radio" name = "answer5" value = "ΔABC ≌ ΔDEF "  ></input>ΔABC ≌ ΔDEF </label>
+    <br>
+    <label><input type="radio" name = "answer5" value = "ΔABC Δ ΔEFD"  ></input>ΔABC Δ ΔEFD</label>
+    <br>
+    <label><input type="radio" name = "answer5" value = "ΔABC ≌ ΔFDE"  ></input>ΔABC ≌ ΔFDE</label>
+    <br>
+    <label><input type="radio" name = "answer5" value = "none of these"  ></input>none of these</label>
+    
+</div>
+<br>
+<div>
+  <p>Question: If ΔABC is congruent to ΔDEF by SSS congruence rule, then: </p>
+  <label><input type="radio" name = "answer6" value = "∠C<∠F"  ></input>∠C < ∠F </label>
+  <br>
+  <label><input type="radio" name = "answer6" value = "∠B < ∠E"  ></input>∠B < ∠E</label>
+  <br>
+  <label><input type="radio" name = "answer6" value = "∠A < ∠D"  ></input>∠A < ∠D</label>
+  <br>
+  <label><input type="radio" name = "answer6" value = "∠A = ∠D, ∠B = ∠E, ∠C = ∠F"  ></input>∠A = ∠D, ∠B = ∠E, ∠C = ∠F</label>
+  
+</div>
+<br>
+<div>
+  <p>Question: Given two right angles triangles ABC and PRQ, such that ∠A = 20°, ∠Q = 20° and AC = QP. Write the correspondence if triangles are congruent.</p>
+  <label><input type="radio" name = "answer7" value = " ΔABC≌ ΔPQR"  ></input>ΔABC≌ ΔPQR</label>
+  <br>
+  <label><input type="radio" name = "answer7" value = " ∠ABC ≌ ΔPRQ"  ></input>∠ABC ≌ ΔPRQ</label>
+  <br>
+  <label><input type="radio" name = "answer7" value = "∠ABC ≌ ΔRQP"  ></input>∠ABC ≌ ΔRQP</label>
+  <br>
+  <label><input type="radio" name = "answer7" value = "ΔABC ≌ ΔQRP"  ></input>ΔABC ≌ ΔQRP</label>
+  
+</div>
+<br>
+<div>
+  <p>Question: In a triangle PQR if ∠QPR = 80° and PQ = PR, then ∠R and ∠Q are</p>
+  <label><input type="radio" name = "answer8" value = "80°, 70°"  ></input>80°, 70°</label>
+  <br>
+  <label><input type="radio" name = "answer8" value = " 80°, 80"  ></input> 80°, 80</label>
+  <br>
+  <label><input type="radio" name = "answer8" value = "70°, 80° "  ></input>70°, 80° </label>
+  <br>
+  <label><input type="radio" name = "answer8" value = "50°, 50°"  ></input>50°, 50°</label>
+  
+</div>
+<!-- <br>
+<div>
+  <p>Question:</p>
+  <label><input type="radio" name = "answer9" value = ""  ></input></label>
+  <label><input type="radio" name = "answer9" value = ""  ></input></label>
+  <label><input type="radio" name = "answer9" value = ""  ></input></label>
+  <label><input type="radio" name = "answer9" value = ""  ></input></label>
+  
+</div>
+<br>
+<div>
+  <p>Question:</p>
+  <label><input type="radio" name = "answer10" value = ""  ></input></label>
+  <label><input type="radio" name = "answer10" value = ""  ></input></label>
+  <label><input type="radio" name = "answer10" value = ""  ></input></label>
+  <label><input type="radio" name = "answer10" value = ""  ></input></label>
+  
+</div> -->
+<br>
+ 
     <div id="output"></div>
   </form>  
   <button id="submit" >Submit Answers</button>
