@@ -12,11 +12,11 @@ function isTriangle(){
     if(sumOfAngles===180){
         
         console.log("it is a triangle");
-        showMsg.innerText = "yes, it is a triangle";
+        showMsg.innerText = "Yes, it is a triangle.";
         
     }else{
         console.log("it is not a triangle");
-        showMsg.innerText = "No, it is not a triangle";
+        showMsg.innerText = "No, it is not a triangle.";
     }
 
 }

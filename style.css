@@ -14,6 +14,9 @@
   body{
    
     font-family: sans-serif;
+    width: 100%;
+    margin: auto;
+    
   }
   
   .navbar{
@@ -48,4 +51,86 @@
   
   .link a:hover, .link.active a{
     opacity: 1;
+  }
+
+  /* quiz */
+
+  .form-result{
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  
+  }
+
+  .question-container{
+    
+    background-color: rgba(128, 128, 128, 0.11);
+    width: 85%;
+    border: 5px solid#0295A9 ;
+    border-radius: 10px;
+    padding: 50px;
+    margin: auto;
+  }
+
+  .submit-btn{
+    
+    padding: 10px 24px;
+    background-color:white;
+    color:#0295A9;
+    border: 2px solid #0295A9;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    margin: auto;
+    font-size: large;
+    transition-duration: 0.4s;
+    
+    
+  }
+
+  .submit-btn:hover {
+    background-color:#0295A9;
+    color: white;
+  }
+  .output-msg{
+    
+    
+    width:auto;
+    text-align: center;
+    font-weight: 100;
+    font-size: 2rem;
+    color: #0295A9;
+    
+    padding: 20px;
+    margin: auto;
+
+  }
+
+  .container{
+    background-color: rgba(128, 128, 128, 0.11);
+    width: 75%;
+    border: 5px solid#0295A9 ;
+    border-radius: 10px;
+    padding: 50px;
+    margin: auto;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .heading{
+    color: #0295A9;
+    
+  }
+  .labelstyle{
+    color: #0295A9;
+    font-size: large;
+    padding: 10px;
+    
+    
+    
+  }
+  .input{
+    
+    padding: 5px;
+    margin-bottom: 15px;
+    
   }

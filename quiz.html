@@ -17,8 +17,8 @@
 		</ul>
 	</nav>
   <form class="form-result">
-    <div>
-        <p>Qustion: How many vertices does a triangle have?</p>
+    <div class="question-container" class="question-container">
+        <p>Question: How many vertices does a triangle have?</p>
         <label><input type="radio" name = "answer1" value = "3" ></input>3</label>
         <label><input type="radio" name = "answer1" value = "4" ></input>4</label>
         <label><input type="radio" name = "answer1" value = "5" ></input>5</label>
@@ -26,8 +26,8 @@
         
     </div>
     <br>
-    <div>
-        <p>Qustion: In triangle ABC, if AB=BC and ∠B = 70°, ∠A will be:</p>
+    <div class="question-container">
+        <p>Question: In triangle ABC, if AB=BC and ∠B = 70°, ∠A will be:</p>
         <label><input type="radio" name = "answer2" value =  "70°" ></input>70°</label>
         <label><input type="radio" name = "answer2" value =  "110°"></input>110°</label>
         <label><input type="radio" name = "answer2" value =  "55°"></input>55°</label>
@@ -35,7 +35,7 @@
         
     </div>
     <br>
-    <div>
+    <div class="question-container">
         <p>Question: Choose the correct statement</p>
         <label><input type="radio" name = "answer3" value = "a triangle has two right angles" ></input>a triangle has two right angles</label>
         <br>
@@ -47,7 +47,7 @@
         
     </div>
     <br>
-    <div>
+    <div class="question-container">
       <p>Question:  In two triangles, ABC and PQR, ∠A = 30°, ∠B = 70°, ∠P = 70°, ∠Q = 80° and AB = RP, then</p>
       <label><input type="radio" name = "answer4" value = "ΔABC ≌ ΔPQR"  ></input>ΔABC ≌ ΔPQR</label>
       <br>
@@ -59,7 +59,7 @@
       
   </div>
   <br>
-  <div>
+  <div class="question-container">
     <p>Question: In two triangles ABC and DEF, AB = DE, BC = DF and AC = EF, then</p>
     <label><input type="radio" name = "answer5" value = "ΔABC ≌ ΔDEF "  ></input>ΔABC ≌ ΔDEF </label>
     <br>
@@ -71,7 +71,7 @@
     
 </div>
 <br>
-<div>
+<div class="question-container">
   <p>Question: If ΔABC is congruent to ΔDEF by SSS congruence rule, then: </p>
   <label><input type="radio" name = "answer6" value = "∠C<∠F"  ></input>∠C < ∠F </label>
   <br>
@@ -83,7 +83,7 @@
   
 </div>
 <br>
-<div>
+<div class="question-container">
   <p>Question: Given two right angles triangles ABC and PRQ, such that ∠A = 20°, ∠Q = 20° and AC = QP. Write the correspondence if triangles are congruent.</p>
   <label><input type="radio" name = "answer7" value = " ΔABC≌ ΔPQR"  ></input>ΔABC≌ ΔPQR</label>
   <br>
@@ -95,7 +95,7 @@
   
 </div>
 <br>
-<div>
+<div class="question-container">
   <p>Question: In a triangle PQR if ∠QPR = 80° and PQ = PR, then ∠R and ∠Q are</p>
   <label><input type="radio" name = "answer8" value = "80°, 70°"  ></input>80°, 70°</label>
   <br>
@@ -126,9 +126,12 @@
 </div> -->
 <br>
  
-    <div id="output"></div>
-  </form>  
-  <button id="submit" >Submit Answers</button>
-  <script src="quiz.js"></script>
+
+  </form>
+  <div style="display: flex;"><button class="submit-btn" id="submit" >Submit Answers</button> </div> 
+  <div class="output-msg" id="output"></div>
+  
+  
 </body>
+<script src="quiz.js"></script>
 </html>
