@@ -9,7 +9,11 @@ submitButton.addEventListener("click", isTriangle)
 function isTriangle(){
    
     sumOfAngles = angleSum();
-    if(sumOfAngles===180){
+    if(angle1.value === "" || angle2.value === "" || angle3.value === ""){
+        showMsg.innerText = "Enter all fields.";
+
+    }
+    else if(sumOfAngles===180){
         
         console.log("it is a triangle");
         showMsg.innerText = "Yes, it is a triangle.";
