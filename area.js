@@ -11,7 +11,12 @@ var sd3 = Number(side3.value);
 
 if(side1.value === "" || side2.value === "" || side3.value === ""){
     showMsg.innerText = 'Enter all feilds.';
-}else if((sd1+sd2>sd3)&&(sd3+sd2>sd1)&&(sd1+sd3>sd2)){
+
+}
+else if(side1.value < 0 || side2.value < 0 || side3.value < 0){
+    showMsg.innerText = 'Enter positive values only' ;
+}
+else if((sd1+sd2>sd3)&&(sd3+sd2>sd1)&&(sd1+sd3>sd2)){
     var sideSum = (sd1 + sd2 + sd3)/2;
 
     var areaSquare = sideSum*(sideSum - sd1)*(sideSum - sd2)*(sideSum - sd3);

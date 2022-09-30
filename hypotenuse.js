@@ -8,7 +8,11 @@ submitButton.addEventListener("click", hypotenuseFind);
 function hypotenuseFind(){
     if(side1.value === "" || side2.value === ""){
         showMsg.innerText = 'Enter all fields';
-    }else{
+    }
+    else if(side1.value < 0 || side2.value < 0){
+        showMsg.innerText = 'Enter positive values only' ;
+    }
+    else{
         var sqrSum = Math.pow(side1.value,2) + Math.pow(side2.value,2);
         var hypo = Math.sqrt(sqrSum).toFixed(3);
         console.log(hypo);

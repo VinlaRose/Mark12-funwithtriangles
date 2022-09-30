@@ -13,6 +13,9 @@ function isTriangle(){
         showMsg.innerText = "Enter all fields.";
 
     }
+    else if(angle1.value < 0 || angle2.value < 0 || angle3.value < 0){
+        showMsg.innerText = 'Enter positive values only' ;
+    }
     else if(sumOfAngles===180){
         
         console.log("it is a triangle");
