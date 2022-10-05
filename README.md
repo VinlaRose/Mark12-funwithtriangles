@@ -1,14 +1,14 @@
-# Mark12-funwithtriangles
-A fun website to increase your knowledge on triangles.
+# funWithTriangle
+Fun With Triangle App has Different Sections to play with Tringles
 
-it contains quiz.
+Fun with Triangle app which has quiz on triangle, hypotenuse calculation & area calculation and also a check whether the given angles can form a triangle or not?
 
-Can check if the given sides make a triangle or not
 
-can find the are of the triangles, if sides are given
 
-#tech stack used
+# Tech Stack Used :
 
 HTML
+
 CSS
-Javascript
+
+JavaScript
